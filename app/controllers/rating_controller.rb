@@ -1,6 +1,6 @@
 class RatingController < ApplicationController
 
-  NUM_USERS = 15.freeze
+  NUM_USERS = 30.freeze
 
   def index
     @users = User.rating.limit(NUM_USERS)
