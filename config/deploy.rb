@@ -18,7 +18,7 @@ set :pty,  false
 set :rvm_ruby_version, '2.3.0@pushkin-contest'
 
 set :sidekiq_config, "#{current_path}/config/sidekiq.yml"
-set :sidekiq_processes, 1
+set :sidekiq_processes, 2
 set :sidekiq_log, "#{current_path}/log/sidekiq.log"
 set :sidekiq_role, :sidekiq
 

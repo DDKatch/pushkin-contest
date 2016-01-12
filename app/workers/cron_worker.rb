@@ -2,7 +2,7 @@ class CronWorker
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { secondly(5) }
+  recurrence { secondly(2) }
 
   def perform
     (1..8).to_a.each do |level|
